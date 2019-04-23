@@ -1,0 +1,17 @@
+﻿--student
+calculate GPA
+see all assignments for a certain class
+grade certain class
+assignments that are due on certain days
+for a student with a course under a certain grade, list the assignments with the the lowest grade --report
+--teacher
+all grades for a given course
+students that have/havent submitted work
+average grade for a course
+agerage grade for an assignment
+given a time frame, get all assignments that got above a certain grade --report
+given a student that has a low gpa, calculate how many late assignments they have --report
+--dean
+average gpa for a department
+display each instructors average grade
+for each teacher calculate the number of students in their classes -- report
