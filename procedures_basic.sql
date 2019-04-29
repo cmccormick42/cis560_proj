@@ -37,8 +37,9 @@ AS
 	SELECT DISTINCT A.CourseId, A.PointsPossible, A.AssignmentName, A.DueDate, 
 		A.[Description]
 	FROM proj4.Assignment A
-		INNER JOIN proj4.CourseAttendee CA ON CA.StudentId = @StudentId
+		INNER JOIN proj4.CourseAttendee CA ON CA.CourseId = A.CourseId
 	WHERE A.DueDate <= @Date
+		AND CA.StudentId = @StudentId
 	ORDER BY DueDate DESC
 GO
 

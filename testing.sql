@@ -57,11 +57,12 @@ FROM proj4.AssignmentSubmission SUB
 	INNER JOIN proj4.CourseAttendee CA ON CA.CAID = SUB.CAID
 
 SELECT *
-FROM proj4.Instructor I
+FROM proj4.Course I
 --WHERE I.InstructorId = 2
 
 EXEC proj4.GetAverageCourseGrade
-	@CourseId = 16
+	@CourseId = 17,
+	@InstructorId = 7
 
 SELECT *
 FROM proj4.AssignmentSubmission SUB
